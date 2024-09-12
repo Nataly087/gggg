@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es-BO">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Pizzamania Express!!!</title>
+</head>
+<body>
+    <section id="contenido">
+        <h1>
+            <a href="index.html">
+                <img src="img/logo.jpg" width="200px" height="150px">
+            </a>
+        </h1>
+            <nav>
+                <ul>
+                  <li><a href="index.html">Inicio</a></li>
+                  <li><a href="Productos.html">Productos</a></li>
+                  <li><a href="Pedidos.html">Pedidos</a></li>
+                  <li><a href="Contactos.html">Contactos</a></li>
+                </ul>
+
+            </nav>
+    <h2>Registra tu Pedido!!!</h2>
+      <form enctype="multipart/form.data">
+        <fieldset>
+        <p class="col-md-4"></p>
+        <legend>Pedidos</legend>
+        <p class="col-md-4">
+            <label for="nombres">Nombres</label>
+            <input type="text" name="nombres" placeholder="" class="form-control input" required="true" pattern="[a-zA-Záéíóú]{3,30}" title="El nombre solo debe tener letras Ej. Maria" >
+        </p>
+         <p class="col-md-4">
+            <label for="nombres">Apellidos</label>
+            <input type="text" name="Apellidos" placeholder="" class="form-control input" required="true" pattern="[a-zA-Záéíóú]{3,30}" title="El Apellido solo debe tener letras Ej. Salazar">
+        </p>
+
+        <p class="col-md-4">
+        <label for="ci">cedula de identidad</label>
+        <input type="number" name="ci" id="ci">
+        </p> 
+        <p class="col-md-4">
+        <label for="NIT">NIT</label>
+        <input type="number" name="NIT" id="NIT">
+        </p> 
+         <p class="col-md-4">
+            <label for="color">Nombre de la Pizza</label>
+            <input type="text" name="Nombre" id="Nombre">
+        </p>
+        <p class="col-md-4">
+            <label for="Tamaño de Pizza!!!">"Tamaño de Pizza!!!"</label>
+            <select name="Tamaño" id="Tamaño">
+                <option value="Personal">Personal</option>
+                <option value="Mediana">Mediana</option>
+                <option value="Familiar">Familiar</option>
+            </select>
+
+        </p>
+        <p class="col-md-4">
+            <label for="Cantidad">Cantidad</label>
+            <input type="number" name="Cantidad" id="Cantidad">
+        </p>
+        <p class="col-md-4">
+            <p class="col-md-4">Decea la factura?</p>
+            <p class="col-md-4">
+            <label>
+                <input type="radio" name="domicilio" value="si">si
+            </label>
+            <label>
+                <input type="radio" name="domicilio" value="no">no
+            </label>
+            </p>
+        </p>
+        <p class="col-md-4">
+            <label for="calificacion">Como nos califica?</label>
+            <input type="range" name="calificacion" id="calificacion" min="0" max="100">
+        </p>
+         <div class="form-group">
+                <button type="button" class="btn btn-outline-success">
+                 <i class="fab fa-telegram-plane"></i> Enviar
+                </button>
+        </div>
+    </fieldset>
+ </form>
+ </section>
+    <div class="container">
+        <p class="text-center text-secondary">
+            &copy; Copyrigth Nataly Miranda C. 2018
+        </p>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+     <script src="js/app.js"></script>
+</body>
+</html>
